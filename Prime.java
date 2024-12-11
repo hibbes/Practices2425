@@ -27,10 +27,13 @@ class Prime {
     }
 
     public static String output(List<Integer> primes) {
+        int counter = 0;
         String output = "";
         for (Integer prime : primes) {
             output = output + " " + prime;
+            counter++;
         }
+        output = output+"\nMenge: "+counter;
         return output;
     }
 
