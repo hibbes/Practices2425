@@ -18,7 +18,7 @@ public class Probedivision {
         for (int currentNumber = 2; currentNumber <= limit; currentNumber++) {
             // TODO: Rufe isPrime auf und gib die Primzahlen aus
             if (isPrime(currentNumber)) {
-                System.out.println(currentNumber + " ist eine Primzahl.");
+                System.out.print(currentNumber + " ");
             }
         }
     }
