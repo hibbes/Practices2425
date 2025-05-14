@@ -1,29 +1,46 @@
 public class List {
-    private ListenElement kopf;
+    public ListenElement kopf;
 
-
-    public List(int inhalt){
-        kopf = new ListenElement(inhalt);
+    
+    public List(int wert) {
+        kopf = new ListenElement(wert);
+    }
+ 
+    public void entferneBei(int index) {
+        if (index == 0) {
+            kopf = kopf.nachfolger;
+        } else {
+            kopf.entferneBei(index - 1);
+        }
     }
 
-    public void add(int inhalt){
-       kopf.add(new ListenElement(inhalt));
-
+    public int getlLaenge() {
+        return kopf.getlLaenge();
     }
 
-    public void get(){
+    public <T> void anhaengen(T daten) {
+
+        kopf.anhaengen(new ListenElement(daten));
+
+    }
+    
+
+    public boolean finde(int wert) {
+        return kopf.finde(wert);    
+    }
+      
+        public void get(){
         kopf.get();
-    }
+     }
+     
 
     public static void main(String[] args) {
         List l1 = new List(1);
-        l1.add(2);
-        l1.add(3);
-        l1.add(4);
-        l1.get();
-        
+        l1.anhaengen(2);
+        l1.anhaengen(3);
+        l1.anhaengen(4);
+        // l1.get();
 
-
-}
+    }
 
 }
