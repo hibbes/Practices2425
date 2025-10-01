@@ -1,11 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
 class Prime {
+   static long summe=0;
 
     public static void main(String[] args) {
 
-        System.out.println(output(generatePrimes(100)));
+        System.out.println(output(generatePrimes(1000000)));
+        System.out.println("Summe: " + summe);
     }
 
     public static boolean isPrime(int candidate) {
@@ -21,6 +24,7 @@ class Prime {
         for (int candidate = 2; candidate <= max; candidate++) {
             if (isPrime(candidate)) {
                 primes.add(candidate);
+                summe+=candidate;
             }
         }
         return primes;
