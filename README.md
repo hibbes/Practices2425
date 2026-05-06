@@ -49,6 +49,22 @@ Enthält Aufgaben zu OOP, Rekursion, Sortieren, Datenstrukturen und grafischen S
 | `List.java` / `ListenElement.java` / `Listenknoten.java` | Verkettete Listen (verschiedene Varianten) |
 | `QueueWithList.java` | Queue auf Basis einer verketteten Liste |
 
+### Datei­system-Modell (Composite-Muster)
+| Datei | Inhalt |
+|-------|--------|
+| `Eintrag.java` | Basisklasse: Datei oder Verzeichnis-Eintrag |
+| `Verzeichnis.java` | Ordner als spezialisierter Eintrag (mit Kindern als Array) |
+| `DateisystemDemo.java` | Aufbau, Umbenennen, Entfernen, Baum-Ausgabe |
+
+### Medien­verwaltung (abstrakte Klassen + polymorphe Tarifik)
+| Datei | Inhalt |
+|-------|--------|
+| `Medium.java` | Abstrakte Basis: Titel, ID, Ausleih-Status, Tarif-Hooks |
+| `Buch.java` | Frist 28 Tage, Mahn­gebühr 0,20&nbsp;€ pro Tag |
+| `DVD.java` | 1,00&nbsp;€/Tag ab Tag&nbsp;1, max. 7 Tage |
+| `Zeitschrift.java` | Aktuell 1,00&nbsp;€/Tag (1 Tag) – Archiv 14 Tage gratis |
+| `MediathekDemo.java` | Ausleihen, Zurückgeben, Gesamt­einnahme, Doppel-Ausleihe |
+
 ### Java-Rätsel
 | Datei | Inhalt |
 |-------|--------|
