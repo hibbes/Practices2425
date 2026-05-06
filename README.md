@@ -11,6 +11,7 @@ Enthält Aufgaben zu OOP, Rekursion, Sortieren, Datenstrukturen und grafischen S
 | `Fahrzeug.java` | Basisklasse für Fahrzeuge |
 | `Auto.java` | Unterklasse von Fahrzeug |
 | `Fahrrad.java` | Unterklasse von Fahrzeug |
+| `Zug.java` | Schienenfahrzeug als Unterklasse von Fahrzeug |
 | `Kriechbar.java` | Interface für kriechende Objekte |
 | `Rennschnecke.java` | Implementiert Kriechbar |
 | `Slomoschnecke.java` | Spezialisierung von Rennschnecke |
@@ -37,6 +38,7 @@ Enthält Aufgaben zu OOP, Rekursion, Sortieren, Datenstrukturen und grafischen S
 | Datei | Inhalt |
 |-------|--------|
 | `MergeSort.java` | MergeSort-Implementierung |
+| `Sortieralgorithmen.java` | Bubble-, Gnome- und BogoSort im Vergleich |
 | `Prime.java` / `Probedivision.java` | Primzahlen |
 | `SieveOfEratosthenes.java` | Sieb des Eratosthenes |
 | `Galtonbrett.java` | Galton-Brett-Simulation |
@@ -47,10 +49,17 @@ Enthält Aufgaben zu OOP, Rekursion, Sortieren, Datenstrukturen und grafischen S
 | `List.java` / `ListenElement.java` / `Listenknoten.java` | Verkettete Listen (verschiedene Varianten) |
 | `QueueWithList.java` | Queue auf Basis einer verketteten Liste |
 
+### Java-Rätsel
+| Datei | Inhalt |
+|-------|--------|
+| `OutputQuiz2.java` | Initialisierungs­reihenfolge: was gibt das Programm aus – und warum? |
+
 ### Sonstige
 | Datei | Inhalt |
 |-------|--------|
 | `CharIncrement.java` | Zeichen-Arithmetik |
+| `GiftGenerator.java` | Zufalls­geschenke aus Wortlisten (Random, Arrays) |
+| `GridSearch.java` | Pfad durch ein 2D-Gitter (Einstieg in 2D-Arrays) |
 | `Weihnachtsbaum.java` | ASCII-Weihnachtsbaum (→ auch Xmas2018.java) |
 | `Xmas2018.java` | ASCII-Weihnachtsbaum von 2018 (kommentierte Version) |
 | `Test.java` | Allgemeine Testklasse |
